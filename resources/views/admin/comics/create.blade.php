@@ -15,16 +15,16 @@
                 <input type="text" name="title" id="title" class="form-control" placeholder="Comic title here " aria-describedby="nameHelper" required>
             </div>
             <div class="mb-3">
-                <label for="title" class="form-label">Description</label>
-                <input type="text" name="title" id="title" class="form-control" placeholder="Comic description here " aria-describedby="nameHelper">
+                <label for="description" class="form-label">Description</label>
+                <input type="text" name="description" id="description" class="form-control" placeholder="Comic description here " aria-describedby="nameHelper">
             </div>
             <div class="mb-3">
-                <label for="image" class="form-label">Image</label>
-                <input type="text" name="image" id="image" class="form-control" placeholder="Comic image here " aria-describedby="imageHelper" require>
+                <label for="thumb" class="form-label">Image</label>
+                <input type="text" name="thumb" id="thumb" class="form-control" placeholder="Comic image here " aria-describedby="imageHelper" require>
             </div>
             <div class="mb-3">
                 <label for="price" class="form-label">Price</label>
-                <input type="number" step="0.01" name="price" id="price" class="form-control" placeholder="Comic price here " aria-describedby="priceHelper" require>
+                <input type="text" name="price" id="price" class="form-control" placeholder="Comic price here " aria-describedby="priceHelper" require>
             </div>
             <div class="mb-3">
                 <label for="series" class="form-label">Series</label>
