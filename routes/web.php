@@ -15,13 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/* Milestone 2
-Iniziate a definire le prime operazioni CRUD con le relative view:
-index()
-show()
-create()
-store() */
-
 Route::get('/', [PageController::class, 'index']);
 
 Route::resource('admin/comics', ComicController::class);
