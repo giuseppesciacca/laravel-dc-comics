@@ -1,1 +1,124 @@
 @import '~bootstrap/scss/bootstrap';
+/* $primary: rgba(2, 130, 249, 1);
+$secondary: rgba(48, 48, 48, 1);
+$dark: rgba(28, 28, 28, 1);
+$lighter: rgba(255, 255, 255, 1);
+$linkFooter: rgba(128, 128, 128, 1);
+$darkLight: rgba(70, 70, 73, 1); */
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#app_header {
+    .logo img {
+        height: 80px;
+    }
+
+    li {
+        height: 120px;
+    }
+
+    a {
+        color: rgba(70, 70, 73, 1);
+        font-weight: 600;
+    }
+
+    li:hover {
+        border-bottom: 5px solid rgba(2, 130, 249, 1);
+        cursor: pointer;
+    }
+
+    li:hover a {
+        color: rgba(2, 130, 249, 1);
+        margin-bottom: -5px;
+    }
+}
+
+
+main {
+    background-color: rgba(28, 28, 28, 1);
+
+    .jumbotron {
+        background-image: url(../images/jumbotron.jpg);
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #current_series {
+        top: -60px;
+        left: 0;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .banner_main {
+        background-color: rgba(2, 130, 249, 1);
+        min-height: 150px;
+
+        img {
+            height: 60px;
+            object-fit: contain;
+        }
+
+        div:last-child>img {
+            width: 55px;
+        }
+    }
+}
+
+#app_footer {
+    #footer_top {
+        min-height: 370px;
+        background-image: url(../images/footer-bg.jpg);
+
+        #logo_bg_main {
+            background-image: url(../images/dc-logo-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        ul {
+            list-style: none;
+
+            h4 {
+                font-weight: bold;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgba(128, 128, 128, 1);
+            }
+
+            a:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+
+    #footer_bottom {
+        background-color: rgba(48, 48, 48, 1);
+        min-height: 110px;
+
+        .col {
+            height: 110px;
+
+            .my_btn {
+                border: 2px solid rgba(2, 130, 249, 1);
+                border-radius: 0;
+                color: white;
+                padding: 0.5rem;
+            }
+
+            p {
+                color: rgba(2, 130, 249, 1);
+            }
+        }
+    }
+}

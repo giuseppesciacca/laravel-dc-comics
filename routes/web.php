@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\ComicController;
+use App\Http\Controllers\Guest\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/* Milestone 2
+Iniziate a definire le prime operazioni CRUD con le relative view:
+index()
+show()
+create()
+store() */
+
+Route::get('/', [PageController::class, 'index']);
+
+Route::resource('admin/comics', ComicController::class);
