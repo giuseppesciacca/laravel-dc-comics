@@ -21,7 +21,7 @@
 
             @forelse ($comics as $comic)
             <tr>
-                <td scope="row">{{$comic['title']}}</td>
+                <td scope="row"><a href="{{route('comics.show', $comic->id)}}">{{$comic['title']}}</a></td>
                 <td>{{$comic['description']}}</td>
                 <td>{{$comic['thumb']}}</td>
                 <td>{{$comic['price']}}</td>
