@@ -7,7 +7,8 @@
     <div class="container">
         <h5 class="text-uppercase text-muted my-4">Add a new Comic</h5>
 
-        <form action="" method="post">
+        <form action="{{route('comics.store')}}" method="post">
+            @csrf
 
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
@@ -23,7 +24,7 @@
             </div>
             <div class="mb-3">
                 <label for="price" class="form-label">Price</label>
-                <input type="number" step="0.01" name="price" id="price" class="form-control" placeholder="Saber price here " aria-describedby="priceHelper" require>
+                <input type="number" step="0.01" name="price" id="price" class="form-control" placeholder="Comic price here " aria-describedby="priceHelper" require>
             </div>
             <div class="mb-3">
                 <label for="series" class="form-label">Series</label>
