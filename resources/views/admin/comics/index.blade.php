@@ -2,7 +2,7 @@
 
 
 @section('content')
-<div class="container bg-light py-3">
+<div class="container-fluid bg-light py-3">
     <h5>Add new Comic</h5>
     <a href="{{route('comics.create')}}"><i class="fa-solid fa-plus fa-2x"></i></a>
 

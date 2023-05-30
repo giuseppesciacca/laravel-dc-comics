@@ -13,7 +13,7 @@
                         <a class="nav-link" aria-current="page" href="#">CHARACTERS</a>
                     </li>
                     <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link" aria-current="page" href="#">COMICS</a>
+                        <a class="nav-link" aria-current="page" href="/">COMICS</a>
                     </li>
                     <li class="nav-item d-flex align-items-center">
                         <a class="nav-link" aria-current="page" href="#">MOVIE</a>
