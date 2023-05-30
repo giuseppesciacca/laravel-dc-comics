@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row">
 
-            <div class="logo col-12 col-md-5 col-lg-5 d-flex align-items-center">
+            <div class="logo col-12 col-md-5 col-lg-4 d-flex align-items-center">
                 <img class="img-fluid" src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="">
             </div>
             <!-- /header left -->
 
-            <nav class="navbar navbar-expand col-12 col-md-7 col-lg-7 p-0">
+            <nav class="navbar navbar-expand col-12 col-md-7 col-lg-8 p-0 justify-content-end">
                 <ul class="nav navbar-nav ">
                     <li class="nav-item d-flex align-items-center">
                         <a class="nav-link" aria-current="page" href="#">CHARACTERS</a>
@@ -38,6 +38,9 @@
                     </li>
                     <li class="nav-item d-flex align-items-center">
                         <a class="nav-link" aria-current="page" href="#">SHOP</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" aria-current="page" href="{{route('comics.index')}}">ADMIN</a>
                     </li>
                 </ul>
             </nav>
