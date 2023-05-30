@@ -14,6 +14,7 @@
                 <th scope="col">Series</th>
                 <th scope="col">Sale date</th>
                 <th scope="col">Type</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
 
@@ -28,6 +29,7 @@
                 <td>{{$comic['series']}}</td>
                 <td>{{$comic['sale_date']}}</td>
                 <td>{{$comic['type']}}</td>
+                <td> <a href="{{route('comics.edit', $comic->id)}}"><i class="fa-solid fa-pencil"></i></a> </td>
             </tr>
 
             @empty
