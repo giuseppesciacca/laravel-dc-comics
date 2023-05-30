@@ -34,12 +34,35 @@
                 <td>
                     <a href="{{route('comics.show', $comic->id)}}"><i class="fa-solid fa-eye"></i></a>
                     <a href="{{route('comics.edit', $comic->id)}}"><i class="fa-solid fa-pencil"></i></a>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalId">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
 
-                    <form action="{{route('comics.destroy', $comic->id)}}" method="post">
-                        @csrf
-                        @method('DELETE')
-                        <button class="btn" type="submit"><i class="fa-solid fa-trash-can"></i></button>
-                    </form>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                        <div class="modal-dialog" role="dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modalTitleId">Delete Comic</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Are you sure to delete this comic?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <form action="{{route('comics.destroy', $comic->id)}}" method="post">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button class="btn btn-danger" type="submit">CONFIRM</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </td>
             </tr>
 
