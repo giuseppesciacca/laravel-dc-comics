@@ -51,7 +51,7 @@ class ComicController extends Controller
 
         $newComic->save();
 
-        return to_route('comics.index');
+        return to_route('comics.index')->with('message', 'comic added successfully');
     }
 
     /**
