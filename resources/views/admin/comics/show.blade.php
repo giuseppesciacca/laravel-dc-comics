@@ -74,15 +74,15 @@
                 <div class="col">
                     <h2 class="border-bottom py-3 m-0 text_dark_blue">Talent</h2>
 
-                    <p class="border-bottom m-0 py-2"><span class="text_dark_blue">Art by:</span></p>
-                    <p class="border-bottom m-0 py-2"><span class="text_dark_blue">Written by:</span></p>
+                    <p class="border-bottom m-0 py-2 d-flex justify-content-between"><span class="text_dark_blue">Art by:</span></p>
+                    <p class="border-bottom m-0 py-2 d-flex justify-content-between"><span class="text_dark_blue">Written by:</span></p>
                 </div>
                 <div class="col">
                     <h2 class="border-bottom py-3 m-0 text_dark_blue">Specs</h2>
 
-                    <p class="border-bottom m-0 py-2"> <span class="text_dark_blue">Series:</span> {{$comic->series}}</p>
-                    <p class="border-bottom m-0 py-2"><span class="text_dark_blue">U.S. Price:</span> {{$comic->price}}</p>
-                    <p class="border-bottom m-0 py-2"><span class="text_dark_blue">On Sale Date: </span>{{$comic->sale_date}}</p>
+                    <p class="border-bottom m-0 py-2 d-flex justify-content-between"> <span class="text_dark_blue">Series:</span> <span class="series_comic">{{$comic->series}}</span></p>
+                    <p class="border-bottom m-0 py-2 d-flex justify-content-between"><span class="text_dark_blue">U.S. Price:</span> {{$comic->price}}</p>
+                    <p class="border-bottom m-0 py-2 d-flex justify-content-between"><span class="text_dark_blue">On Sale Date: </span>{{$comic->sale_date}}</p>
                 </div>
             </div>
         </div>
