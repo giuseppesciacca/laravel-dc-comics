@@ -10,7 +10,6 @@
         <thead>
             <tr>
                 <th scope="col">Title</th>
-                <th scope="col">Description</th>
                 <th scope="col">Thumb</th>
                 <th scope="col">Price</th>
                 <th scope="col">Series</th>
@@ -24,8 +23,7 @@
 
             @forelse ($comics as $comic)
             <tr>
-                <td scope="row">{{$comic['title']}}</a></td>
-                <td>{{$comic['description']}}</td>
+                <td scope="row">{{$comic['title']}}</td>
                 <td>{{$comic['thumb']}}</td>
                 <td>{{$comic['price']}}</td>
                 <td>{{$comic['series']}}</td>
@@ -34,13 +32,13 @@
                 <td>
                     <a href="{{route('comics.show', $comic->id)}}"><i class="fa-solid fa-eye"></i></a>
                     <a href="{{route('comics.edit', $comic->id)}}"><i class="fa-solid fa-pencil"></i></a>
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalId">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalId-{{$comic->id}}">
                         <i class="fa-solid fa-trash-can"></i>
                     </button>
 
 
                     <!-- Modal -->
-                    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                    <div class="modal fade" id="modalId-{{$comic->id}}" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
                         <div class="modal-dialog" role="dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
