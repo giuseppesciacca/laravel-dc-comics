@@ -29,16 +29,27 @@
                     <div class="col-9">
                         <p class="m-0 py-3 d-flex justify-content-between">
                             <span>
-                                U.S. Price: {{$comic->price}}
+                                <span class="text_light_green">U.S. Price:</span> {{$comic->price}}
                             </span>
                             <span>
-                                AVAIBLE
+                                <span class="text_light_green">AVAIBLE</span>
                             </span>
                         </p>
                     </div>
+
                     <div class="col-3 avaibility_box">
-                        <p class="m-0 py-3 text-center">Check Avaibility</p>
+                        <div class="dropdown open py-3">
+                            <button class="btn dropdown-toggle text-white p-0" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Check Avaibility
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="triggerId">
+                                <button class="dropdown-item" href="#">Action</button>
+                            </div>
+                        </div>
                     </div>
+
+
+
                 </div>
                 <!-- /green banner -->
 

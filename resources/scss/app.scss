@@ -6,6 +6,8 @@ $lighter: rgba(255, 255, 255, 1);
 $linkFooter: rgba(128, 128, 128, 1);
 $darkLight: rgba(70, 70, 73, 1); */
 
+/* #region COMMON and Utilities */
+
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -14,6 +16,16 @@ $darkLight: rgba(70, 70, 73, 1); */
     max-width: 1020px;
     margin: auto;
 }
+
+.text_dark_blue {
+    color: #243f5e;
+}
+
+.text_light_green {
+    color: #b1f688;
+}
+
+/* #endregion COMMON and Utilities */
 
 #app_header {
     .logo img {
@@ -101,10 +113,6 @@ main {
         .avaibility_box {
             border-left: 1px solid green;
         }
-    }
-
-    .text_dark_blue {
-        color: #243f5e;
     }
 
     .description {
