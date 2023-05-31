@@ -33,7 +33,7 @@
                     <a href="{{route('comics.show', $comic->id)}}"><i class="fa-solid fa-eye"></i></a>
                     <a href="{{route('comics.edit', $comic->id)}}"><i class="fa-solid fa-pencil"></i></a>
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalId-{{$comic->id}}">
-                        <i class="fa-solid fa-trash-can"></i>
+                        <i class="fa-solid fa-trash-can" style="color: #dc3545"></i>
                     </button>
 
 
@@ -53,7 +53,7 @@
                                     <form action="{{route('comics.destroy', $comic->id)}}" method="post">
                                         @csrf
                                         @method('DELETE')
-                                        <button class="btn btn-danger" type="submit">CONFIRM</button>
+                                        <button class="btn btn-danger" type="submit">Confirm</button>
                                     </form>
 
                                 </div>
