@@ -3,7 +3,7 @@
     <div id="footer_top" class="px-3 text-white">
         <div class="container">
             <div class="row">
-                <div class="col py-4">
+                <div class="col pt-4">
 
                     <div class="row">
                         <div class="col">
@@ -110,6 +110,11 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="site_credits pt-1 pb-5">
+                        <p class="m-0">All Site Content TM and <i class="fa-regular fa-copyright fa-xs"></i> 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All rights reserved.</p>
+
+                        <p class="m-0"><a href="#">Cookies Settings</a></p>
                     </div>
                 </div>
 
