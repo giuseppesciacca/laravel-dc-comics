@@ -86,7 +86,7 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(StoreComicRequest $request, Comic $comic)
+    public function update(UpdateComicRequest $request, Comic $comic)
     {
         $val_data = $request->validated();
 
