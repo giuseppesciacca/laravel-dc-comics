@@ -6,13 +6,12 @@
 
 </style>
 
+<div class="jumbotron mb-4 d-flex flex-column justify-content-end">
+    <div id="banner_blue"></div>
+</div>
+<!-- /.jumbotron + banner_blue -->
+
 <div class="container bg-light p-0">
-
-    <div class="jumbotron mb-4 d-flex flex-column justify-content-end">
-        <div id="banner_blue"></div>
-    </div>
-    <!-- /.jumbotron + banner_blue -->
-
     <div class="container_small px-3 py-5 position-relative">
 
         <div id="current_comic" class="position-absolute">
@@ -63,7 +62,7 @@
 
             <div class="col-12 col-lg-4">
                 ADVERTISEMENT
-                <!--                 <img src="../../../images//adv.jpg" alt="advertisement"> -->
+                <img src="../../../images//adv.jpg" alt="advertisement">
             </div>
 
         </div>

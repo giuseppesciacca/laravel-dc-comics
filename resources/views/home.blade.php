@@ -2,7 +2,7 @@
 
 
 @section('content')
-<main id="app_main" class="text-white">
+<div class="text-white bg_dark">
 
     <div class="jumbotron mb-4"></div>
     <!-- /.jumbotron -->
@@ -50,5 +50,8 @@
         <!-- /.container -->
     </div>
     <!-- /.banner_main -->
-</main>
+
+
+
+</div>
 @endsection
