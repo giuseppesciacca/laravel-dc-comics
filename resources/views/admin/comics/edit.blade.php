@@ -6,16 +6,6 @@
 
     <div class="container">
 
-        <!--         @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                <li>{{$error}}</li>
-                @endforeach
-            </ul>
-        </div>
-        @endif -->
-
         <h5 class="text-uppercase text-muted my-4">Edit a Comic</h5>
 
         <form action="{{route('comics.update', $comic->id)}}" method="post">

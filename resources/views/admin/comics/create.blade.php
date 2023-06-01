@@ -5,15 +5,6 @@
 <div class="bg-light py-3">
 
     <div class="container">
-        @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                <li>{{$error}}</li>
-                @endforeach
-            </ul>
-        </div>
-        @endif
 
         <h5 class="text-uppercase text-muted my-4">Add a new Comic</h5>
 
@@ -22,7 +13,7 @@
 
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
-                <input type="text" name="title" id="title" class="form-control" placeholder="Comic title here " aria-describedby="nameHelper" required>
+                <input type="text" name="title" id="title" class="form-control @error('title') is-invalid @enderror" placeholder="Comic title here " aria-describedby="nameHelper">
 
                 @error('title')
                 <div class="alert alert-danger" role="alert">
@@ -33,7 +24,7 @@
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Description</label>
-                <input type="text" name="description" id="description" class="form-control" placeholder="Comic description here " aria-describedby="nameHelper">
+                <input type="text" name="description" id="description" class="form-control @error('description') is-invalid @enderror" placeholder="Comic description here " aria-describedby="nameHelper">
 
                 @error('description')
                 <div class="alert alert-danger" role="alert">
@@ -43,7 +34,7 @@
             </div>
             <div class="mb-3">
                 <label for="thumb" class="form-label">Image</label>
-                <input type="text" name="thumb" id="thumb" class="form-control" placeholder="Comic image here " aria-describedby="imageHelper" required>
+                <input type="text" name="thumb" id="thumb" class="form-control @error('thumb') is-invalid @enderror" placeholder="Comic image here " aria-describedby="imageHelper">
 
                 @error('thumb')
                 <div class="alert alert-danger" role="alert">
@@ -53,7 +44,7 @@
             </div>
             <div class="mb-3">
                 <label for="price" class="form-label">Price</label>
-                <input type="text" name="price" id="price" class="form-control" placeholder="Comic price here " aria-describedby="priceHelper" required>
+                <input type="text" name="price" id="price" class="form-control @error('price') is-invalid @enderror" placeholder="Comic price here " aria-describedby="priceHelper">
 
                 @error('price')
                 <div class="alert alert-danger" role="alert">
@@ -63,7 +54,7 @@
             </div>
             <div class="mb-3">
                 <label for="series" class="form-label">Series</label>
-                <input type="text" name="series" id="series" class="form-control" placeholder="Comic series here " aria-describedby="imageHelper">
+                <input type="text" name="series" id="series" class="form-control @error('series') is-invalid @enderror" placeholder="Comic series here " aria-describedby="imageHelper">
 
                 @error('series')
                 <div class="alert alert-danger" role="alert">
@@ -73,7 +64,7 @@
             </div>
             <div class="mb-3">
                 <label for="sale_date" class="form-label">Sale date</label>
-                <input type="text" name="sale_date" id="sale_date" class="form-control" placeholder="Comic sale date here " aria-describedby="imageHelper" required>
+                <input type="text" name="sale_date" id="sale_date" class="form-control @error('sale_date') is-invalid @enderror" placeholder="Comic sale date here " aria-describedby="imageHelper">
 
                 @error('sale_date')
                 <div class="alert alert-danger" role="alert">
@@ -83,7 +74,7 @@
             </div>
             <div class="mb-3">
                 <label for="type" class="form-label">Type</label>
-                <input type="text" name="type" id="type" class="form-control" placeholder="Comic sale date here " aria-describedby="imageHelper">
+                <input type="text" name="type" id="type" class="form-control @error('type') is-invalid @enderror" placeholder="Comic sale date here " aria-describedby="imageHelper">
 
                 @error('type')
                 <div class="alert alert-danger" role="alert">
