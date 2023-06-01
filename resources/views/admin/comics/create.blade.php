@@ -22,7 +22,7 @@
 
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
-                <input type="text" name="title" id="title" class="form-control" placeholder="Comic title here " aria-describedby="nameHelper">
+                <input type="text" name="title" id="title" class="form-control" placeholder="Comic title here " aria-describedby="nameHelper" required>
 
                 @error('title')
                 <div class="alert alert-danger" role="alert">
@@ -43,7 +43,7 @@
             </div>
             <div class="mb-3">
                 <label for="thumb" class="form-label">Image</label>
-                <input type="text" name="thumb" id="thumb" class="form-control" placeholder="Comic image here " aria-describedby="imageHelper">
+                <input type="text" name="thumb" id="thumb" class="form-control" placeholder="Comic image here " aria-describedby="imageHelper" required>
 
                 @error('thumb')
                 <div class="alert alert-danger" role="alert">
@@ -53,7 +53,7 @@
             </div>
             <div class="mb-3">
                 <label for="price" class="form-label">Price</label>
-                <input type="text" name="price" id="price" class="form-control" placeholder="Comic price here " aria-describedby="priceHelper">
+                <input type="text" name="price" id="price" class="form-control" placeholder="Comic price here " aria-describedby="priceHelper" required>
 
                 @error('price')
                 <div class="alert alert-danger" role="alert">
@@ -73,7 +73,7 @@
             </div>
             <div class="mb-3">
                 <label for="sale_date" class="form-label">Sale date</label>
-                <input type="text" name="sale_date" id="sale_date" class="form-control" placeholder="Comic sale date here " aria-describedby="imageHelper">
+                <input type="text" name="sale_date" id="sale_date" class="form-control" placeholder="Comic sale date here " aria-describedby="imageHelper" required>
 
                 @error('sale_date')
                 <div class="alert alert-danger" role="alert">

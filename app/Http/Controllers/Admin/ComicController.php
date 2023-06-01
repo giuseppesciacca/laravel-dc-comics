@@ -41,12 +41,12 @@ class ComicController extends Controller
 
         $val_data = $request->validate([
             'title' => 'required|unique:comics|max:255',
-            'description' => 'nullable',
-            'thumb' => 'required|max:255',
+            'description' => 'nullable|string',
+            'thumb' => 'required|max:255|string',
             'price' => 'required|numeric',
-            'series' => 'nullable|max:255',
+            'series' => 'nullable|max:255|string',
             'sale_date' => 'required|date',
-            'type' => 'max:255',
+            'type' => 'nullable|max:255|string',
         ]);
 
         $newComic = new Comic();
@@ -96,12 +96,12 @@ class ComicController extends Controller
     {
         $val_data = $request->validate([
             'title' => 'required|unique:comics|max:255',
-            'description' => 'nullable',
-            'thumb' => 'required|max:255',
+            'description' => 'nullable|string',
+            'thumb' => 'required|max:255|string',
             'price' => 'required|numeric',
-            'series' => 'nullable|max:255',
+            'series' => 'nullable|max:255|string',
             'sale_date' => 'required|date',
-            'type' => 'max:255',
+            'type' => 'nullable|max:255|string',
         ]);
 
         $comic->update($val_data);
