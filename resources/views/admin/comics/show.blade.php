@@ -63,6 +63,7 @@
 
             <div class="col-12 col-lg-4">
                 ADVERTISEMENT
+                <!--                 <img src="../../../images//adv.jpg" alt="advertisement"> -->
             </div>
 
         </div>

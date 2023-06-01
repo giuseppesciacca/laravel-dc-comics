@@ -39,8 +39,17 @@ class ComicController extends Controller
     public function store(Request $request)
     {
 
-        $newComic = new Comic();
+        $val_data = $request->validate([
+            'title' => 'required|unique:posts|max:255',
+            'description' => 'nullable',
+            'thumb' => 'required|max:255',
+            'price' => 'required|decimal|min:1.00',
+            'series' => 'nullable|max:255',
+            'sale_date' => 'required|date',
+            'type' => 'default:comic|max:255',
+        ]);
 
+        $newComic = new Comic();
         $newComic->title = $request->title;
         $newComic->description = $request->description;
         $newComic->thumb = $request->thumb;
@@ -85,17 +94,17 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        $data = [
-            'title' => $request->title,
-            'description' => $request->description,
-            'thumb' => $request->thumb,
-            'price' => $request->price,
-            'series' => $request->series,
-            'sale_date' => $request->sale_date,
-            'type' => $request->type
-        ];
+        $val_data = $request->validate([
+            'title' => 'required|unique:posts|max:255',
+            'description' => 'nullable',
+            'thumb' => 'required|max:255',
+            'price' => 'required|decimal|min:1.00',
+            'series' => 'nullable|max:255',
+            'sale_date' => 'required|date',
+            'type' => 'default:comic|max:255',
+        ]);
 
-        $comic->update($data);
+        $comic->update($val_data);
 
         return to_route('comics.index')->with('message', 'comic edit successfully');
     }
