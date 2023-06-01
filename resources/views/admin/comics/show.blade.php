@@ -41,9 +41,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
             <!-- /green banner -->
 
@@ -56,8 +53,8 @@
 
         </div>
 
-        <div class="col-12 col-lg-4 description text-end">
-            ADVERTISEMENT
+        <div class="col-12 col-lg-4 description text-center text-lg-end">
+            <p class="m-0">ADVERTISEMENT</p>
             <img class="img-fluid" style="width: 300px;" src="{{ Vite::asset('resources/images//'). 'adv.jpg' }}" alt="advertisement">
         </div>
         <!-- /adv -->
@@ -68,7 +65,7 @@
 
 <div class="bottom_show_page">
     <div class="container_small">
-        <div class="row row-cols-lg-2 g-3 justify-content-center">
+        <div class="row row-cols-1 row-cols-lg-2 px-3 px-lg-0 g-3 justify-content-center">
             <div class="col">
                 <h2 class="border-bottom py-3 m-0 text_dark_blue">Talent</h2>
 
@@ -98,7 +95,7 @@
         <div class="row text-white align-items-center">
 
             @foreach ($banner as $item)
-            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center p-0 m-0 card_banner_show description">
+            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center p-3 p-lg-0 m-0 card_banner_show description m-auto justify-content-center">
                 <p class="ps-3 m-0">{{ $item['text'] }}</p>
                 <img class="img-fluid" src="{{ Vite::asset('resources/images/'). $item['src'] }}" alt="">
             </div>
@@ -110,6 +107,6 @@
     </div>
     <!-- /.container -->
 </div>
-<!-- /.banner_main -->
+<!-- /.banner_show_page -->
 
 @endsection

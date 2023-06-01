@@ -92,7 +92,7 @@ main {
         }
     }
 
-    /* show_page */
+    /* #region show_page */
 
     #current_comic {
         position: relative;
@@ -133,7 +133,7 @@ main {
 
     .banner_show_page {
         background-color: #f6f6f6;
-        height: 70px;
+        min-height: 70px;
         font-size: 0.75rem;
 
         .card_banner_show:first-child {
@@ -150,6 +150,9 @@ main {
             }
         }
     }
+
+    /* #endregion show_page */
+
 }
 
 #app_footer {
