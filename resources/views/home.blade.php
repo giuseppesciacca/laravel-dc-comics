@@ -18,9 +18,11 @@
 
             @foreach ($comics as $comic)
             <div class="col-6 col-md-4 col-lg-2">
-                <img class="img-fluid" src="{{$comic['thumb']}}" alt="">
+                <a href="{{route('comics.show', $comic->id)}}" class="text-decoration-none ">
+                    <img class="img-fluid" src="{{$comic['thumb']}}" alt="">
 
-                <p class="py-3">{{$comic['title']}}</p>
+                    <p class="py-3">{{$comic['title']}}</p>
+                </a>
             </div>
             @endforeach
 
