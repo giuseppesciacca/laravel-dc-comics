@@ -14,7 +14,7 @@
 
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
-                <input type="text" name="title" id="title" class="form-control @error('title') is-invalid @enderror" value="{{$comic->title}}" placeholder=" Comic title here " aria-describedby=" nameHelper">
+                <input type="text" name="title" id="title" class="form-control @error('title') is-invalid @enderror" value="{{old('title', $comic->title)}}" placeholder=" Comic title here " aria-describedby=" nameHelper">
 
                 @error('title')
                 <div class="alert alert-danger" role="alert">
@@ -24,7 +24,7 @@
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Description</label>
-                <input type="text" name="description" id="description" value="{{$comic->description}}" class="form-control @error('description') is-invalid @enderror" placeholder="Comic description here " aria-describedby="nameHelper">
+                <input type="text" name="description" id="description" value="{{old('description', $comic->description)}}" class="form-control @error('description') is-invalid @enderror" placeholder="Comic description here " aria-describedby="nameHelper">
                 @error('description')
                 <div class="alert alert-danger" role="alert">
                     <strong>Errore: </strong>{{$message}}
@@ -33,7 +33,7 @@
             </div>
             <div class="mb-3">
                 <label for="thumb" class="form-label">Image</label>
-                <input type="text" name="thumb" id="thumb" class="form-control @error('thumb') is-invalid @enderror" placeholder="Comic image here " aria-describedby="imageHelper" value="{{$comic->thumb}}">
+                <input type="text" name="thumb" id="thumb" class="form-control @error('thumb') is-invalid @enderror" placeholder="Comic image here " aria-describedby="imageHelper" value="{{old('thumb', $comic->thumb)}}">
                 @error('thumb')
                 <div class="alert alert-danger" role="alert">
                     <strong>Errore: </strong>{{$message}}
@@ -42,7 +42,7 @@
             </div>
             <div class="mb-3">
                 <label for="price" class="form-label">Price</label>
-                <input type="text" name="price" id="price" class="form-control @error('price') is-invalid @enderror" placeholder="Comic price here " aria-describedby="priceHelper" value="{{$comic->price}}">
+                <input type="text" name="price" id="price" class="form-control @error('price') is-invalid @enderror" placeholder="Comic price here " aria-describedby="priceHelper" value="{{old('price', $comic->price)}}">
                 @error('price')
                 <div class="alert alert-danger" role="alert">
                     <strong>Errore: </strong>{{$message}}
@@ -51,7 +51,7 @@
             </div>
             <div class="mb-3">
                 <label for="series" class="form-label">Series</label>
-                <input type="text" name="series" id="series" class="form-control @error('series') is-invalid @enderror" placeholder="Comic series here " aria-describedby="imageHelper" value="{{$comic->series}}">
+                <input type="text" name="series" id="series" class="form-control @error('series') is-invalid @enderror" placeholder="Comic series here " aria-describedby="imageHelper" value="{{old('series', $comic->series)}}">
                 @error('series')
                 <div class="alert alert-danger" role="alert">
                     <strong>Errore: </strong>{{$message}}
@@ -60,7 +60,7 @@
             </div>
             <div class="mb-3">
                 <label for="sale_date" class="form-label">Sale date</label>
-                <input type="text" name="sale_date" id="sale_date" class="form-control @error('sale_date') is-invalid @enderror" placeholder="Comic sale date here " aria-describedby="imageHelper" value="{{$comic->sale_date}}">
+                <input type="text" name="sale_date" id="sale_date" class="form-control @error('sale_date') is-invalid @enderror" placeholder="Comic sale date here " aria-describedby="imageHelper" value="{{old('sale_date', $comic->sale_date)}}">
                 @error('sale_date')
                 <div class="alert alert-danger" role="alert">
                     <strong>Errore: </strong>{{$message}}
@@ -69,7 +69,7 @@
             </div>
             <div class="mb-3">
                 <label for="type" class="form-label">Type</label>
-                <input type="text" name="type" id="type" class="form-control @error('type') is-invalid @enderror" placeholder="Comic sale date here " aria-describedby="imageHelper" value="{{$comic->type}}">
+                <input type="text" name="type" id="type" class="form-control @error('type') is-invalid @enderror" placeholder="Comic sale date here " aria-describedby="imageHelper" value="{{old('type', $comic->type)}}">
                 @error('type')
                 <div class="alert alert-danger" role="alert">
                     <strong>Errore: </strong>{{$message}}
