@@ -71,11 +71,7 @@ class ComicController extends Controller
                 'src' => 'buy-comics-digital-comics.png'
             ],
             [
-                'text' => 'DC MERCHANDISE',
-                'src' => 'buy-comics-merchandise.png'
-            ],
-            [
-                'text' => 'SUBSCRIPTION',
+                'text' => 'SHOP DC',
                 'src' => 'buy-comics-subscriptions.png'
             ],
             [
@@ -83,9 +79,9 @@ class ComicController extends Controller
                 'src' => 'buy-comics-shop-locator.png'
             ],
             [
-                'text' => 'DC POWER VISA',
-                'src' => 'buy-dc-power-visa.svg'
-            ],
+                'text' => 'SUBSCRIPTION',
+                'src' => 'buy-comics-merchandise.png'
+            ]
         ];
 
         return view('admin.comics.show', compact('comic', 'banner'));

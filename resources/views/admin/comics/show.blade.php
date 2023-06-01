@@ -94,13 +94,13 @@
 <!-- bottom_show_page -->
 
 <div class="banner_show_page d-flex align-items-center">
-    <div class="container">
-        <div class="row text-white align-items-center px-5">
+    <div class="container_small">
+        <div class="row text-white align-items-center">
 
             @foreach ($banner as $item)
-            <div class="col-12 col-md-6 col-lg d-flex align-items-center py-3 p-lg-0">
-                <img class="img-fluid" src="{{ Vite::asset('resources/images/'). $item['src'] }}" alt="">
+            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center p-0 m-0 card_banner_show description">
                 <p class="ps-3 m-0">{{ $item['text'] }}</p>
+                <img class="img-fluid" src="{{ Vite::asset('resources/images/'). $item['src'] }}" alt="">
             </div>
             @endforeach
             <!-- /.cols -->

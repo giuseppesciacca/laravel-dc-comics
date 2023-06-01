@@ -133,9 +133,23 @@ main {
 
     .banner_show_page {
         background-color: #f6f6f6;
+        height: 70px;
+        font-size: 0.75rem;
+
+        .card_banner_show:first-child {
+            border-left: 1px solid #d8d8d8;
+        }
+
+        .card_banner_show {
+            border-right: 1px solid #d8d8d8;
+
+            img {
+                max-height: 40px;
+                object-fit: contain;
+                filter: invert(20%);
+            }
+        }
     }
-
-
 }
 
 #app_footer {
