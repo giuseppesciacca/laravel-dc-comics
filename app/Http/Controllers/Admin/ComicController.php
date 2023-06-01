@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Comic;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreComicRequest;
-use app\Http\Requests\UpdateComicRequest;
+use App\Http\Requests\UpdateComicRequest;
 
 class ComicController extends Controller
 {
@@ -65,7 +65,30 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        return view('admin.comics.show', compact('comic'));
+        $banner = [
+            [
+                'text' => 'DIGITAL COMICS',
+                'src' => 'buy-comics-digital-comics.png'
+            ],
+            [
+                'text' => 'DC MERCHANDISE',
+                'src' => 'buy-comics-merchandise.png'
+            ],
+            [
+                'text' => 'SUBSCRIPTION',
+                'src' => 'buy-comics-subscriptions.png'
+            ],
+            [
+                'text' => 'COMIC SHOP LOCATOR',
+                'src' => 'buy-comics-shop-locator.png'
+            ],
+            [
+                'text' => 'DC POWER VISA',
+                'src' => 'buy-dc-power-visa.svg'
+            ],
+        ];
+
+        return view('admin.comics.show', compact('comic', 'banner'));
     }
 
     /**
